@@ -40,6 +40,7 @@ set(INSTALL_CMAKE_DIR ${DEF_INSTALL_CMAKE_DIR} CACHE PATH "Installation director
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 # ++++++++++++++++++ find and use all dependent libraries of imuDataUtils +++++++++++++++++++++ #
+list(APPEND CMAKE_PREFIX_PATH "/home/wcsng/Desktop/share/HighFive/CMake/")
 set(IMUDATAUTILSLIBS) # variables list for adding libraries to
 # --- Require Boost ---
 find_package(Boost 1.58 COMPONENTS filesystem REQUIRED )
